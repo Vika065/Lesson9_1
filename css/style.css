@@ -1,0 +1,344 @@
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+	background: url("../img/j2u3u9xjlrs31.jpg") 0 0 / cover no-repeat fixed;
+	font-size: 25px;
+	line-height: 1.5;
+}
+
+h1 {
+	font-family: "Shizuru", sans-serif;
+	text-transform: uppercase;
+	font-size: 100px;
+	color: #000000;
+	text-shadow: 10px 10px 5px rgba(54, 41, 28, 0.712);
+	text-align: center;
+}
+
+.container1 {
+	/* background: url("../img/3106ef914195adbe613029f9bd751556.jpg") 0 0 / 100% auto no-repeat local; */
+	border-radius: 100px;
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.719);
+	text-align: justify;
+	background-image: linear-gradient(
+		144deg,
+		rgba(129, 97, 58, 0.76) 0%,
+		rgba(226, 172, 79, 0.76) 50%,
+		rgba(246, 235, 209, 0.76) 100%
+	);
+	padding: 40px;
+	max-width: 900px;
+	margin: 30px auto 50px;
+}
+
+/* ?кнопка */
+.start {
+	display: block;
+	max-width: 350px;
+	margin: 20px auto;
+	color: aliceblue;
+	background: url("../img/67.jpg") 0 0 / cover no-repeat;
+	padding: 40px 30px;
+	text-transform: uppercase;
+	font-size: 50px;
+	border-radius: 40px;
+	text-align: center;
+	box-shadow: 2px 8px 0 0 rgb(88, 61, 30), inset 0 0px 10px 0 rgba(255, 255, 255, 0.171);
+}
+.start:hover {
+	text-decoration: underline;
+	color: rgb(145, 255, 0);
+	box-shadow: 2px 5px 0 0 rgb(0, 0, 0);
+	margin: 23px auto 17px;
+}
+.start:active {
+	color: #818181;
+	box-shadow: 0 0px 0 0 rgb(88, 61, 30), inset 0 0px 15px 0 rgb(0, 0, 0);
+	margin: 28px auto 12px;
+}
+
+.pp {
+	color: #2c1b0ba8;
+	text-align: center;
+}
+.pp:before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url("../img/before.png") 0 0 / 40px no-repeat;
+}
+.pp:after {
+	content: "";
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url("../img/after.png") 0 20px / 80px no-repeat;
+}
+
+/* --------------------------игра-------------------------- */
+.game {
+	display: none;
+	padding: 30px 30px 50px;
+	background-image: linear-gradient(
+		144deg,
+		rgba(129, 97, 58, 0.5) 0%,
+		rgba(226, 172, 79, 0.5) 50%,
+		rgba(246, 235, 209, 0.5) 100%
+	);
+	max-width: 900px;
+	margin: 0 auto 40px;
+	border-radius: 100px;
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.719);
+}
+.game:target {
+	display: block;
+}
+
+.img-game {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+	border-radius: 60px;
+	box-shadow: 0 0 30px #fffb00;
+}
+
+/* -----------игровые поля----------- */
+.block1-game {
+	height: 40px;
+	width: 40px;
+	background-color: red;
+	margin-left: 425px;
+}
+
+.block2-game,
+.block3-game,
+.block4-game,
+.block5-game,
+.block6-game,
+.block7-game,
+.block8-game,
+.block9-game,
+.block10-game,
+.block11-game,
+.block12-game,
+.block13-game,
+.block14-game {
+	background-color: rgb(43, 21, 0);
+}
+
+.block2-game {
+	height: 150px;
+	width: 30px;
+	visibility: hidden;
+	margin-left: 430px;
+}
+.block3-game {
+	height: 15px;
+	width: 460px;
+	visibility: hidden;
+}
+.block4-game {
+	height: 100px;
+	width: 25px;
+	visibility: hidden;
+}
+.block5-game {
+	height: 20px;
+	width: 750px;
+	visibility: hidden;
+}
+.block6-game,
+.block7-game {
+	height: 60px;
+	width: 20px;
+	visibility: hidden;
+}
+.block6-game {
+	margin-left: 300px;
+}
+.block7-game {
+	margin-top: -60px;
+	margin-left: 730px;
+}
+.img-block7-1 {
+	height: 120px;
+	margin-left: 630px;
+	box-shadow: 0 0 30px red;
+	border-radius: 30px;
+}
+.block7-1-game {
+	visibility: hidden;
+}
+.block8-game {
+	margin-top: -120px;
+	margin-left: 300px;
+	width: 20px;
+	height: 140px;
+	visibility: hidden;
+}
+.block9-game {
+	margin-left: 30px;
+	width: 290px;
+	height: 15px;
+	visibility: hidden;
+}
+.block10-game {
+	margin-left: 30px;
+	width: 20px;
+	height: 70px;
+	visibility: hidden;
+}
+.block11-game {
+	margin-left: 30px;
+	width: 650px;
+	height: 20px;
+	visibility: hidden;
+}
+
+.block12-game {
+	margin: 0 0 0 665px;
+	width: 15px;
+	height: 40px;
+	visibility: hidden;
+}
+.block13-game {
+	margin-top: -40px;
+	margin-left: 150px;
+	width: 10px;
+	height: 40px;
+
+	visibility: hidden;
+}
+.img-block13-1 {
+	height: 150px;
+	margin-left: 90px;
+}
+.block13-1-game {
+	visibility: hidden;
+}
+
+.block14-game {
+	margin-top: -190px;
+	width: 15px;
+	height: 200px;
+	margin-left: 665px;
+	visibility: hidden;
+}
+.block15-game {
+	background-image: linear-gradient(144deg, rgba(255, 0, 0, 1) 0%, rgba(135, 31, 0, 1) 50%, rgba(43, 21, 0, 1) 100%);
+	height: 20px;
+	width: 300px;
+	margin-left: 380px;
+	visibility: hidden;
+}
+.block16-game {
+	background-color: red;
+	width: 20px;
+	height: 45px;
+	margin-left: 380px;
+	visibility: hidden;
+}
+
+.img-over {
+	display: block;
+	margin: 0 auto;
+	max-width: 700px;
+	border-radius: 60px;
+	box-shadow: 0 0 45px #ff0000;
+}
+.block17-game {
+	visibility: hidden;
+}
+
+.block1-game:hover + .block2-game,
+.block2-game:hover {
+	visibility: visible;
+}
+
+.block2-game:hover + .block3-game,
+.block3-game:hover {
+	visibility: visible;
+}
+
+.block3-game:hover + .block4-game,
+.block4-game:hover {
+	visibility: visible;
+}
+
+.block4-game:hover + .block5-game,
+.block5-game:hover {
+	visibility: visible;
+}
+
+.block5-game:hover + .block6-game,
+.block6-game:hover {
+	visibility: visible;
+}
+
+.block5-game:hover + .block6-game + .block7-game,
+.block7-game:hover {
+	visibility: visible;
+}
+
+.block7-game:hover + .block7-1-game,
+.block7-1-game:hover {
+	visibility: visible;
+}
+.block6-game:hover ~ .block8-game,
+.block8-game:hover {
+	visibility: visible;
+}
+.block8-game:hover + .block9-game,
+.block9-game:hover {
+	visibility: visible;
+}
+
+.block9-game:hover + .block10-game,
+.block10-game:hover {
+	visibility: visible;
+}
+.block10-game:hover + .block11-game,
+.block11-game:hover {
+	visibility: visible;
+}
+
+.block11-game:hover + .block12-game,
+.block6-game:hover {
+	visibility: visible;
+}
+
+.block11-game:hover + .block12-game + .block13-game,
+.block13-game:hover {
+	visibility: visible;
+}
+
+.block13-game:hover + .block13-1-game,
+.block13-1-game:hover {
+	visibility: visible;
+}
+.block12-game:hover ~ .block14-game,
+.block14-game:hover {
+	visibility: visible;
+}
+.block14-game:hover + .block15-game,
+.block15-game:hover {
+	visibility: visible;
+}
+.block15-game:hover + .block16-game,
+.block16-game:hover {
+	visibility: visible;
+}
+.block16-game:hover + .block17-game,
+.block17-game:hover {
+	visibility: visible;
+}
